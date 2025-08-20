@@ -1,0 +1,68 @@
+//** MIXINS **//
+
+@use 'variables' as *;
+
+
+// Mixins pris d'un précédent projet, à titre d'exemple et de référence.
+
+@mixin btn($bgColor, $txtColor, $borColor, $txtSize: 1.6rem){
+    background-color: $bgColor;
+    color: $txtColor;
+    border: 1px solid $borColor;
+    font-size: $txtSize;
+    font-weight: bold;
+    padding: $pad-std;
+    border-radius: $rad-std;
+    margin: 0.5rem;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:focus {
+        @include accessibleFocus()
+    }
+
+    &:hover{
+        opacity: .9;
+    }
+
+    &:active{
+        box-shadow: 2px 2px 5px $color-dark-accent;
+    }
+}
+
+@mixin input($padding: $pad-std, $borRad: $rad-std){
+    padding: $padding;
+    border-radius: $borRad;
+    border: 1px solid $color-dark-accent;
+
+    &:focus {
+        @include accessibleFocus()
+    }
+
+    &.success {
+        border-color: $color-success;
+    }
+
+    &.error {
+        border-color: $color-error;
+    }
+
+    + .errorMessage{
+        color: $color-error;
+        font-size: 1rem;
+        height: 13px;
+    }
+}
+
+@mixin card($width){
+    width: $width;
+    background: $color-accent;
+    padding: $pad-std;
+    border-radius: $rad-std;
+}
+
+@mixin accessibleFocus(){
+    outline: 3px solid black;
+    box-shadow: 0 0 0 6px white;
+}
