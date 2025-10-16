@@ -1,1 +1,29 @@
+@use 'variables' as *;
+
 /** TYPOGRAPHIE **/
+
+@font-face {
+    font-family: "FontTitre";
+    src: url(../font/AlanSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "FontTexte";
+    src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "FontTexte";
+    line-height: 1.6;
+    font-size: 1.6rem;
+    background-color: $color-background;
+    color: $color-text;
+}
+
+h1,h2,h3{
+    font-family: "FontTitre";
+}

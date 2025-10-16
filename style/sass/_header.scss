@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /** HEADER **/
 
 .screen-reader-text {
@@ -11,4 +13,24 @@
     position: absolute;
     width: 1px;
     word-wrap: normal !important;
+}
+
+.navBar{
+    color: $color-text;
+    background-color: $color-main;
+    font-family: "FontTitre";
+
+    &__logo{
+        height: 100px;
+        padding: $pad-std;
+    }
+
+    &__link{
+        &--active{
+            color: $color-gold;
+        }
+        &:hover{
+            color: $color-gold;
+        }
+    }
 }

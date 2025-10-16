@@ -1,4 +1,14 @@
 /** GENERAL **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 4rem 0;
+}
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -13,7 +23,43 @@
   height: 13px;
 }
 
+.map-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.map-section__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /** TYPOGRAPHIE **/
+@font-face {
+  font-family: "FontTitre";
+  src: url(../font/AlanSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "FontTexte";
+  src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "FontTexte";
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: #000000;
+  color: #f7fbfb;
+}
+
+h1, h2, h3 {
+  font-family: "FontTitre";
+}
+
 /** HEADER **/
 .screen-reader-text {
   border: 0;
@@ -26,4 +72,20 @@
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.navBar {
+  color: #f7fbfb;
+  background-color: #8a8a8a;
+  font-family: "FontTitre";
+}
+.navBar__logo {
+  height: 100px;
+  padding: 0.5em 1em;
+}
+.navBar__link--active {
+  color: #F9AD00;
+}
+.navBar__link:hover {
+  color: #F9AD00;
 }

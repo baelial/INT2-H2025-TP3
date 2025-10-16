@@ -12,7 +12,7 @@ Remis à : **Laurent Drolet**
 ## Contexte
 >C’est votre dernier site web à réaliser dans le cadre de ce cours !  
 >L’objectif de ce projet est de mettre en pratique toutes les compétences vues ensemble (intégration responsive avec Tailwind, BEM, SASS, PWA, accessibilité, Git, etc.), mais surtout de **créer un site qui vous ressemble**.
-
+>
 >Ce travail porte sur les aspects suivants de l’intégration web :
 >- Intégration responsive à l’aide de la grilles Tailwind
 >- Classes et composants Tailwind
