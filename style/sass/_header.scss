@@ -31,6 +31,12 @@
         }
         &:hover{
             color: $color-gold;
+            transition: .5s;
+            text-shadow: $color-gold 1px 0 4px;
         }
+    }
+
+    & ul {
+        padding-left: 2rem;
     }
 }

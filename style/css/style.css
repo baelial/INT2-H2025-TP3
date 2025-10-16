@@ -88,4 +88,9 @@ h1, h2, h3 {
 }
 .navBar__link:hover {
   color: #F9AD00;
+  transition: 0.5s;
+  text-shadow: #F9AD00 1px 0 4px;
+}
+.navBar ul {
+  padding-left: 2rem;
 }
