@@ -4,7 +4,7 @@
 
 // Mixins pris d'un précédent projet, à titre d'exemple et de référence.
 
-@mixin btn($bgColor, $txtColor, $borColor, $txtSize: 1.6rem){
+@mixin btn($bgColor, $txtColor, $borColor, $txtSize: 1rem){
     background-color: $bgColor;
     color: $txtColor;
     border: 1px solid $borColor;
@@ -26,7 +26,7 @@
     }
 
     &:active{
-        box-shadow: 2px 2px 5px $color-dark-accent;
+        box-shadow: 2px 2px 5px;
     }
 }
 

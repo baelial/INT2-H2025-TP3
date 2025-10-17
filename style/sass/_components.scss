@@ -1,0 +1,12 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+/** COMPONENTS **/
+
+.btn{
+    @include btn($color-gold, $color-text, $color-gold);
+
+    &--secondary{
+        @include btn($color-pink, $color-text, $color-pink);
+    }
+}

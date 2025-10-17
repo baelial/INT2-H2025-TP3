@@ -26,6 +26,9 @@ Remis à : **Laurent Drolet**
 
 ### Composants Tailwind
 
-1. Premier élément
+Composants pris sur [Flowbite](https://flowbite.com/)
+
+1. [_Sticky navbar_](https://flowbite.com/docs/components/navbar/#sticky-navbar)
+    Navbar du site entier
 2. Deuxième élément
 3. Troisième élément

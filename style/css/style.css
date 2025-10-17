@@ -1,18 +1,64 @@
+/** COMPONENTS **/
+.btn {
+  background-color: #F9AD00;
+  color: #f7fbfb;
+  border: 1px solid #F9AD00;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 3px solid black;
+  box-shadow: 0 0 0 6px white;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  box-shadow: 2px 2px 5px;
+}
+.btn--secondary {
+  background-color: #FF23C1;
+  color: #f7fbfb;
+  border: 1px solid #FF23C1;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn--secondary:focus {
+  outline: 3px solid black;
+  box-shadow: 0 0 0 6px white;
+}
+.btn--secondary:hover {
+  opacity: 0.9;
+}
+.btn--secondary:active {
+  box-shadow: 2px 2px 5px;
+}
+
 /** GENERAL **/
 * {
   box-sizing: border-box;
 }
 
 section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .container {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 5% 5%;
-  font-size: 1.5rem;
 }
 
 .errorMessage {
@@ -33,6 +79,11 @@ section {
   border: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
 /** TYPOGRAPHIE **/
 @font-face {
   font-family: "FontTitre";
@@ -88,7 +139,4 @@ h1, h2, h3 {
   color: #F9AD00;
   transition: 0.5s;
   text-shadow: #F9AD00 1px 0 4px;
-}
-.navBar ul {
-  padding-left: 2rem;
 }
