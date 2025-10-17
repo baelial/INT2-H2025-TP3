@@ -9,3 +9,4 @@ GIT :
 https://github.com/baelial/INT2-H2025-TP3.git
 
 Site hébergé :
+https://baelial.github.io/INT2-H2025-TP3/
