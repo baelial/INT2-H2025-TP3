@@ -25,7 +25,7 @@
 
 
         <nav class="navBar fixed w-full z-20 top-0 start-0">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between">
                 <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="./media/logo/Logo.png" class="navBar__logo" alt="Logo de nidrawttt">
                 </a>
@@ -41,21 +41,22 @@
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-[45%] md:order-1" id="navbar-sticky">
+                <div class="items-center justify-between hidden w-full text-base md:text-lg lg:text-[32px] md:flex md:w-[45%] md:order-1"
+                    id="navbar-sticky">
                     <ul
-                        class="flex flex-col justify-between gap-4 md:w-full p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        class="flex flex-col justify-between gap-4 mb-4 md:mb-0 md:p-0 font-medium md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
                             <a href="/index.html"
-                                class="navBar__link navBar__link--active block py-2 px-3 rounded-sm md:bg-transparent md:p-0"
+                                class="navBar__link navBar__link--active block rounded-sm md:bg-transparent md:p-0"
                                 aria-current="page">Accueil</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="navBar__link block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0">Portfolio</a>
+                                class="navBar__link block rounded-sm md:hover:bg-transparent md:p-0">Portfolio</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="navBar__link block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0">Réserver</a>
+                                class="navBar__link block rounded-sm md:hover:bg-transparent md:p-0">Réserver</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +72,52 @@
 
     </main>
 
-    <!-- <script src="scripts/validations.js"></script> -->
+    <footer class="relative">
+        <img class="w-full object-none h-54 md:h-30 border-none grayscale brightness-20 opacity-80"
+            src="/media/img/footer.jpg" alt="Tatoueur à l'action" />
+
+        <div class="absolute bottom-0 w-full text-xs">
+            <div class="mx-20 flex flex-col">
+                <div class="py-5 flex flex-col items-center gap-2 md:flex-row md:justify-around">
+                    <div>&copy; 2025 nidrawttt. All rights reserved</div>
+                    <a class="border-none bg-transparent" href="mailto:nidrawttt@gmail.com">
+                        nidrawttt@gmail.com
+                    </a>
+                    <div class="flex gap-5">
+                        <a class="border-none bg-transparen" href="https://app.bookme.ink/nidrawttt" target="_blank">
+                            bookme.ink
+                        </a>
+                        <a href="https://www.instagram.com/nidrawttt/" target="_blank">
+                            <img class="invert" src="media/icon/instagram.png" alt="Logo d'instagram>">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-white/30" />
+
+            <div class="py-5 flex flex-col items-center gap-2 md:flex-row md:justify-around">
+                <a class="border-none bg-transparent" href="https://www.cegeptr.qc.ca/" target="_blank">
+                    Cégep de Trois-Rivière
+                </a>
+                <div>
+                    <h3>Réalisé par : Emmanuel&nbsp;Carré</h3>
+                </div>
+
+                <div class="flex gap-5">
+                    <a href="https://www.linkedin.com/in/emmanuel-carré-759023201" target="_blank">
+                        <img class="invert" src="media/icon/linkedin.png" alt="Logo de LinkedIn">
+                    </a>
+                    <a href="https://github.com/baelial" target="_blank">
+                        <img class="invert" src="media/icon/github.png" alt="Logo de GitHub">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
 </body>
