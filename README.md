@@ -26,9 +26,10 @@ Remis à : **Laurent Drolet**
 
 ### Composants Tailwind
 
-Composants pris sur [Flowbite](https://flowbite.com/)
+Composants tirés de [Flowbite](https://flowbite.com/)
 
 1. [_Sticky navbar_](https://flowbite.com/docs/components/navbar/#sticky-navbar)
-    Navbar du site entier
-2. Deuxième élément
+    Navbar du site
+2. [_Flush accordion_](https://flowbite.com/docs/components/accordion/#flush-accordion)
+    Page Réserver, troisième section
 3. Troisième élément

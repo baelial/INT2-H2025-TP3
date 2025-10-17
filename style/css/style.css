@@ -6,7 +6,6 @@
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5em 1em;
-  border-radius: 10px;
   margin: 0.5rem;
   display: inline-block;
   transition: all 0.2s;
@@ -29,7 +28,6 @@
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5em 1em;
-  border-radius: 10px;
   margin: 0.5rem;
   display: inline-block;
   transition: all 0.2s;
@@ -107,6 +105,24 @@ body {
 
 h1, h2, h3 {
   font-family: "FontTitre";
+  cursor: default;
+}
+
+h2 {
+  color: #FF23C1;
+  font-size: 3.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.faqSection {
+  margin: 1.5em 0;
+}
+.faqSection:hover {
+  transition: 0.1s;
+  color: #F9AD00;
+  letter-spacing: 0.2em;
+  cursor: help;
 }
 
 /** HEADER **/

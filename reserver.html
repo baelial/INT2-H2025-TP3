@@ -46,8 +46,7 @@
                     <ul
                         class="flex flex-col justify-between gap-4 ml-4 mb-4 md:ml-0 md:mb-0 md:p-0 font-medium md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="index.html"
-                                class="navBar__link block rounded-sm md:bg-transparent md:p-0"
+                            <a href="index.html" class="navBar__link block rounded-sm md:bg-transparent md:p-0"
                                 aria-current="page">Accueil</a>
                         </li>
                         <li>
@@ -68,7 +67,223 @@
     <main id="content">
         <section></section>
         <section></section>
-        <section></section>
+        <section class="container">
+            <div class="w-[90%] md:w-[80%] m-auto">
+                <div id="faq">
+                    <h2 class="italic">FAQ&nbsp;#</h2>
+
+                    <h3 class="faqSection">Pour réserver un <em>flash</em></h3>
+
+                    <div class="text-base" id="accordion-flush" data-accordion="collapse"
+                        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                        data-inactive-classes="text-gray-500 dark:text-gray-400">
+
+                        <h3 id="accordion-flush-heading-1">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-1" aria-expanded="false"
+                                aria-controls="accordion-flush-body-1">
+                                <span>Comment je réserve un tatouage flash ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: C’est super simple ! Il te
+                                    suffit
+                                    de nous contacter (par message, mail ou directement au shop) pour choisir ton flash
+                                    préféré. On te donne les dispos et on bloque ton créneau ensemble.</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-2">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                                aria-controls="accordion-flush-body-2">
+                                <span>Est-ce que je peux modifier un flash ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: En général, les flashs sont
+                                    des créations uniques, pensées pour être tatouées telles quelles. Mais si tu veux
+                                    une petite adaptation (taille, couleur, emplacement…), on peut toujours en discuter
+                                    !</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-3">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                                aria-controls="accordion-flush-body-3">
+                                <span>Faut-il verser un acompte pour réserver ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Oui, un petit acompte est
+                                    demandé pour bloquer ton créneau. Il est déduit du prix total du tatouage le jour J.
+                                    Ça permet d’être sûr que le flash t’est bien réservé !</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-4">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                                aria-controls="accordion-flush-body-4">
+                                <span>Et si je dois annuler ou reporter ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Pas de panique, ça peut
+                                    arriver. Préviens-nous simplement le plus tôt possible. Selon le délai, ton acompte
+                                    peut être reporté sur une autre date. Le but, c’est que tout se passe dans la bonne
+                                    humeur ! ✨</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="faqSection">Avant la séance</h3>
+
+                    <div class="text-base" id="accordion-flush2" data-accordion="collapse"
+                        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                        data-inactive-classes="text-gray-500 dark:text-gray-400">
+
+                        <h3 id="accordion-flush-heading-5">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
+                                aria-controls="accordion-flush-body-5">
+                                <span>Comment bien me préparer avant ma séance ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Rien de compliqué ! Mange
+                                    bien,
+                                    bois de
+                                    l’eau et viens reposé. Évite simplement l’alcool et les drogues la veille, pour que
+                                    tout
+                                    se passe au mieux.</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-6">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
+                                aria-controls="accordion-flush-body-6">
+                                <span>Dois-je faire quelque chose de spécial pour ma peau ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Oui, un peu d’amour pour ta
+                                    peau !
+                                    Hydrate-la bien les jours précédents, évite le soleil et ne mets pas de crème le
+                                    jour J.
+                                    Une peau en forme, c’est un tatouage qui cicatrise mieux.</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-7">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
+                                aria-controls="accordion-flush-body-7">
+                                <span>Et si je ne me sens pas très bien le jour du tatouage ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Pas de souci, ça arrive à tout
+                                    le
+                                    monde. Si tu es malade ou fatigué, il vaut mieux reporter : ton corps doit être en
+                                    forme
+                                    pour que tout se passe bien.</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="accordion-flush-heading-8">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                data-accordion-target="#accordion-flush-body-8" aria-expanded="false"
+                                aria-controls="accordion-flush-body-8">
+                                <span>Est-ce que je peux venir accompagné(e) ?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+
+                        <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Bien sûr, si ça te rassure !
+                                    Mais
+                                    garde en tête que certaines zones de tatouage sont réservées au calme, pour que le
+                                    tatoueur reste concentré et que tu passes un bon moment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
 
     </main>
 
