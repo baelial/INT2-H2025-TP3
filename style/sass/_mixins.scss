@@ -2,8 +2,6 @@
 
 //** MIXINS **//
 
-// Mixins pris d'un précédent projet, à titre d'exemple et de référence.
-
 @mixin btn($bgColor, $txtColor, $borColor, $txtSize: 1rem){
     background-color: $bgColor;
     color: $txtColor;

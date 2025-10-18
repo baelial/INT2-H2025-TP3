@@ -218,7 +218,7 @@ section:not(:first-of-type) {
 }
 .navBar__logo {
   height: 100px;
-  padding: 0.5em 1em;
+  padding: 16px;
 }
 .navBar__link--active {
   color: #F9AD00;
@@ -250,12 +250,20 @@ body {
   color: #f7fbfb;
 }
 
+.h1Logo {
+  margin: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 h1, h2, h3 {
   font-family: "FontTitre";
   cursor: default;
 }
 
-h2 {
+h1, h2 {
   color: #FF23C1;
   font-size: 3rem;
   font-weight: 700;

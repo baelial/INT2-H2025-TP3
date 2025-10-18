@@ -24,12 +24,20 @@ body {
     color: $color-text;
 }
 
+.h1Logo {
+    margin: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
 h1,h2,h3{
     font-family: "FontTitre";
     cursor: default;
 }
 
-h2{
+h1, h2{
     color: $color-pink;
     font-size: 3rem;
     font-weight: 700;

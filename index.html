@@ -27,7 +27,9 @@
         <nav class="navBar fixed w-full z-20 top-0 start-0">
             <div class="max-w-screen flex flex-wrap items-center justify-between">
                 <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./media/logo/Logo.png" class="navBar__logo" alt="Logo de nidrawttt">
+                    <h1 class="h1Logo">
+                        <img src="./media/logo/Logo.png" class="navBar__logo" alt="Logo de nidrawttt">
+                    </h1>
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button data-collapse-toggle="navbar-sticky" type="button"
@@ -66,9 +68,114 @@
     </header>
 
     <main id="content">
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="accueil" class="container">
+
+        </section>
+
+        <section id="portfolio" class="container">
+            <div class="w-full px-[5%] md:w-[80%] m-auto">
+                <div class="grid grid-cols-12 gap-6 md:gap-10">
+                    <a class="col-span-12 md:col-span-6 lg:col-span-4" href="portfolio.html#flash">
+                        <div
+                            class="relative grid h-[15rem] flex-col items-end justify-center overflow-hidden rounded-lg bg-white">
+                            <div
+                                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('media/img/flash.jpg')] bg-cover bg-center">
+                                <div
+                                    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50">
+                                </div>
+                            </div>
+                            <div class="relative text-center inset-0 p-6 px-6 py-14 md:px-12">
+                                <h3 class="mb-6 font-medium">
+                                    Flash
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="col-span-12 md:col-span-6 lg:col-span-4" href="portfolio.html#custom">
+                        <div
+                            class="relative grid h-[15rem] flex-col items-end justify-center overflow-hidden rounded-lg bg-white">
+                            <div
+                                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('media/img/custom.jpg')] bg-cover bg-center">
+                                <div
+                                    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50">
+                                </div>
+                            </div>
+                            <div class="relative text-center inset-0 p-6 px-6 py-14 md:px-12">
+                                <h3 class="mb-6 font-medium">
+                                    Custom
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="col-span-12 md:col-span-12 lg:col-span-4" href="portfolio.html#maquillage">
+                        <div
+                            class="relative grid h-[15rem] flex-col items-end justify-center overflow-hidden rounded-lg bg-white">
+                            <div
+                                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('media/img/maquillage.jpg')] bg-cover bg-center">
+                                <div
+                                    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50">
+                                </div>
+                            </div>
+                            <div class="relative text-center inset-0 p-6 px-6 py-14 md:px-12">
+                                <h3 class="mb-6 text-3xl font-medium">
+                                    Maquillage permanent
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="container">
+            <div class="w-full px-[5%] md:w-[80%] m-auto">
+                <h2 class="mt-10 mb-8 leading-none italic">Me trouver!</h2>
+                <div class="flex flex-col md:flex-row justify-between pb-6">
+                    <div class="w-full text-base pb-6">
+                        2019 Rue Moreau #305B<br>
+                        Montréal<br>
+                        QC H1W 2M1</div>
+                    <table class="w-full text-base">
+                        <tbody>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Vendredi</td>
+                                <td class="py-1 text--pink">12h00–18h00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Samedi</td>
+                                <td class="py-1 text--pink">12h00–18h00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Dimanche</td>
+                                <td class="py-1 text--gold">Fermé</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Lundi</td>
+                                <td class="py-1 text--gold">Fermé</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Mardi</td>
+                                <td class="py-1 text--gold">Fermé</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Mercredi</td>
+                                <td class="py-1 text--pink">12h00–18h00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4 font-medium">Jeudi</td>
+                                <td class="py-1 text--pink">12h00–18h00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="map-section">
+                <iframe title="Carte Google pointant vers le studio Les Chochottes" class="map-section__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.514617903574!2d-73.54872899999997!3d45.5399723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bd222ca83af%3A0x5eefa6b367516281!2sLes%20Chochottes!5e0!3m2!1sfr!2sca!4v1760756334601!5m2!1sfr!2sca"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
     </main>
 
