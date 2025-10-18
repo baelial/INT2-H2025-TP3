@@ -32,7 +32,9 @@
 @mixin input($padding: $pad-std, $borRad: $rad-std){
     padding: $padding;
     border-radius: $borRad;
-    border: 1px solid $color-dark-accent;
+    border: 1px solid $color-main;
+    color: $color-background;
+    font-size: .8rem;
 
     &:focus {
         @include accessibleFocus()
@@ -40,24 +42,26 @@
 
     &.success {
         border-color: $color-success;
+        border-width: 2px;
     }
 
     &.error {
         border-color: $color-error;
+        border-width: 2px;
     }
 
     + .errorMessage{
         color: $color-error;
-        font-size: 1rem;
+        font-size: .75rem;
         height: 13px;
     }
 }
 
 @mixin card($width){
     width: $width;
-    background: $color-accent;
+    background-color: $color-text;
     padding: $pad-std;
-    border-radius: $rad-std;
+    border-radius: 2px;
 }
 
 @mixin accessibleFocus(){

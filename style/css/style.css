@@ -1,3 +1,47 @@
+/** GENERAL **/
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 0;
+}
+section:first-of-type {
+  padding: 3.5em 0 2em 0;
+}
+section:not(:first-of-type) {
+  padding: 0 0 2em 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.errorMessage {
+  color: #ff3860;
+  font-size: 1rem;
+  height: 13px;
+}
+
+.map-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.map-section__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
 /** COMPONENTS **/
 .btn {
   background-color: #F9AD00;
@@ -44,85 +88,113 @@
   box-shadow: 2px 2px 5px;
 }
 
-/** GENERAL **/
-* {
-  box-sizing: border-box;
-}
-
-section {
-  padding: 5rem 0;
-}
-
-.container {
+.formCard {
   width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
+  background-color: #f7fbfb;
+  padding: 0.5em 1em;
+  border-radius: 2px;
 }
-
-.errorMessage {
-  color: #ff3860;
+.formCard__label {
+  color: #FF23C1;
   font-size: 1rem;
+}
+.formCard__input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #8a8a8a;
+  color: #000000;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-top: 1%;
+}
+.formCard__input:focus {
+  outline: 3px solid black;
+  box-shadow: 0 0 0 6px white;
+}
+.formCard__input.success {
+  border-color: #09C372;
+  border-width: 2px;
+}
+.formCard__input.error {
+  border-color: #E80426;
+  border-width: 2px;
+}
+.formCard__input + .errorMessage {
+  color: #E80426;
+  font-size: 0.75rem;
   height: 13px;
 }
-
-.map-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.formCard__inputRow {
+  display: flex;
+  gap: 10px;
 }
-.map-section__iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
+.formCard__inputRow--f1 {
+  flex: 1;
 }
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 0;
-  }
+.formCard__inputRow--f1 > .errorMessage {
+  color: #e80426;
+  font-size: 0.75rem;
+  height: 13px;
+  display: block;
+  margin-top: 3px;
 }
-/** TYPOGRAPHIE **/
-@font-face {
-  font-family: "FontTitre";
-  src: url(../font/AlanSans-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "FontTexte";
-  src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
-}
-html {
-  font-size: 20px;
-}
-
-body {
-  font-family: "FontTexte";
-  line-height: 1.6;
-  font-size: 1.6rem;
-  background-color: #000000;
+.formCard__button {
+  background-color: #FF23C1;
   color: #f7fbfb;
+  border: 1px solid #FF23C1;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
 }
-
-h1, h2, h3 {
-  font-family: "FontTitre";
-  cursor: default;
+.formCard__button:focus {
+  outline: 3px solid black;
+  box-shadow: 0 0 0 6px white;
 }
-
-h2 {
-  color: #FF23C1;
-  font-size: 3.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.formCard__button:hover {
+  opacity: 0.9;
 }
-
-.faqSection {
-  margin: 1.5em 0;
+.formCard__button:active {
+  box-shadow: 2px 2px 5px;
 }
-.faqSection:hover {
-  transition: 0.1s;
-  color: #F9AD00;
-  letter-spacing: 0.2em;
-  cursor: help;
+.formCard__text {
+  text-align: center;
+  padding: 0 0 20px;
+}
+.formCard__radioGroup {
+  margin-top: 3%;
+  padding: 0 10px 20px 10px;
+  border-radius: 5px;
+  border: 1px solid #8a8a8a;
+  background-color: #ffffff;
+}
+.formCard__radioGroup .errorMessage {
+  color: #e80426;
+  font-size: 0.75rem;
+  height: 13px;
+  display: block;
+}
+.formCard__radioOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #000000;
+  cursor: pointer;
+}
+.formCard__radioOption input[type=radio] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff23c1;
+}
+.formCard__radioOption input[type=radio]:focus {
+  outline: 3px solid black;
+  outline-offset: 2px;
 }
 
 /** HEADER **/
@@ -155,4 +227,70 @@ h2 {
   color: #F9AD00;
   transition: 0.5s;
   text-shadow: #F9AD00 1px 0 4px;
+}
+
+/** TYPOGRAPHIE **/
+@font-face {
+  font-family: "FontTitre";
+  src: url(../font/AlanSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "FontTexte";
+  src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "FontTexte";
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: #000000;
+  color: #f7fbfb;
+}
+
+h1, h2, h3 {
+  font-family: "FontTitre";
+  cursor: default;
+}
+
+h2 {
+  color: #FF23C1;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.text--main {
+  color: #8a8a8a;
+}
+.text--background {
+  color: #000000;
+}
+.text--pink {
+  color: #FF23C1;
+}
+.text--gold {
+  color: #F9AD00;
+}
+
+.faq__sectionTitle {
+  margin: 1.2em 0;
+}
+.faq__sectionTitle:hover {
+  transition: 0.1s;
+  color: #F9AD00;
+  letter-spacing: 0.2em;
+  cursor: help;
+}
+.faq__sectionHeader {
+  background-color: #F9AD00;
+  color: #f7fbfb;
+  opacity: 95%;
+  font-size: 1.2rem;
+  padding-left: 1em;
+}
+.faq__sectionHeader--inactive {
+  color: #f7fbfb;
 }

@@ -31,18 +31,50 @@ h1,h2,h3{
 
 h2{
     color: $color-pink;
-    font-size: 3.75rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
 
-.faqSection{
-    margin: 1.5em 0;
-    
-    &:hover{
-        transition: .1s;
+.text{
+    &--main{
+        color: $color-main;
+    }
+
+    &--background{
+        color: $color-background;
+    }
+
+    &--pink{
+        color: $color-pink;
+    }
+
+    &--gold{
         color: $color-gold;
-        letter-spacing: .2em;
-        cursor: help;
+    }
+}
+
+.faq{
+    &__sectionTitle{
+        margin: 1.2em 0;
+
+        &:hover{
+            transition: 0.1s;
+            color: $color-gold;
+            letter-spacing: 0.2em;
+            cursor: help;
+        }
+    }
+
+    &__sectionHeader{
+        background-color: $color-gold;
+        color: $color-text;
+        opacity: 95%;
+        font-size: 1.2rem;
+        padding-left: 1em;
+
+        &--inactive{
+            color: $color-text;
+        }
     }
 }

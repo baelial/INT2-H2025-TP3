@@ -26,7 +26,7 @@
 
         <nav class="navBar fixed w-full z-20 top-0 start-0">
             <div class="max-w-screen flex flex-wrap items-center justify-between">
-                <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="./media/logo/Logo.png" class="navBar__logo" alt="Logo de nidrawttt">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -65,22 +65,147 @@
     </header>
 
     <main id="content">
-        <section></section>
-        <section></section>
-        <section class="container">
+
+        <section id="form" class="container">
             <div class="w-[90%] md:w-[80%] m-auto">
-                <div id="faq">
+
+                <h2 class="mt-10 mb-8 leading-none italic">Prenez rendez-vous!</h2>
+
+                <div class="text-base text-center mb-8">Envie de donner vie à votre projet tatouage ? Que vous craquiez
+                    pour un <span class="text--gold"><em>flash</em></span>
+                    disponible immédiatement ou que vous souhaitiez un <span class="text--gold"><em>custom</em></span>
+                    créé sur mesure, chaque pièce
+                    est pensée pour refléter votre personnalité et votre univers. Partagez vos idées, inspirations ou
+                    envies à travers le formulaire ci-dessous — je vous recontacterai rapidement pour discuter de votre
+                    projet et planifier votre rendez-vous.<br>
+                    Vous pouvez aussi consulter la <span class="text--pink"><a href="#faq">FAQ</a></span> ci-dessous.
+                </div>
+
+                <div class="formCard">
+                    <form id="formComm" action="confirmation.html" onsubmit="return validateFormComm()" novalidate>
+
+                        <div class="formCard__inputRow flex-col md:flex-row">
+                            <div class="formCard__inputRow--f1">
+                                <label for="fnComm" class="visuallyhidden formCard__label">Nom de famille</label>
+                                <input id="fnComm" class="formCard__input" type="text" placeholder="Nom de famille"
+                                    maxlength="256">
+                                <div class="errorMessage"></div>
+                            </div>
+
+                            <div class="formCard__inputRow--f1">
+                                <label for="nComm" class="visuallyhidden formCard__label">Prénom</label>
+                                <input id="nComm" class="formCard__input" type="text" placeholder="Prénom">
+                                <div class="errorMessage"></div>
+                            </div>
+                        </div>
+
+                        <div class="formCard__inputRow flex-col md:flex-row">
+                            <div class="formCard__inputRow--f1">
+                                <label for="telComm" class="visuallyhidden formCard__label">Téléphone</label>
+                                <input id="telComm" class="formCard__input" type="tel" size="20" minlength="12"
+                                    maxlength="12" placeholder="514-111-2222">
+                                <div class="errorMessage"></div>
+                            </div>
+
+                            <div class="formCard__inputRow--f1">
+                                <label for="dateComm" class="visuallyhidden formCard__label">Date de naissance</label>
+                                <input id="dateComm" class="formCard__input" type="date">
+                                <div class="errorMessage"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="emailComm" class="visuallyhidden formCard__label">Courriel</label>
+                            <input id="emailComm" class="formCard__input" type="email"
+                                placeholder="nidrawttt@exemple.com">
+                            <div class="errorMessage"></div>
+                        </div>
+
+                        <div class="formCard__inputRow flex-col md:flex-row">
+                            <div class="formCard__inputRow--f1 formCard__radioGroup">
+                                <label class="formCard__radioLabel formCard__label">Type de tattoo</label>
+                                <div class="formCard__radioOptions">
+                                    <div class="flex flex-col">
+                                        <label class="formCard__radioOption">
+                                            <input type="radio" id="customComm" name="tattooType" value="custom">
+                                            Custom
+                                        </label>
+                                        <label class="formCard__radioOption">
+                                            <input type="radio" id="flashComm" name="tattooType" value="flash">
+                                            Flash
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="errorMessage"></div>
+                            </div>
+
+                            <div class="formCard__inputRow--f1">
+                                <label for="budComm" class="visuallyhidden formCard__label">Budget</label>
+                                <div class="flex">
+                                    <input id="budComm" class="formCard__input" type="number" min="0" placeholder="CAD">
+                                    <div class="text--pink pl-1">$</div>
+                                </div>
+                                <div class="errorMessage"></div>
+
+                            </div>
+                        </div>
+
+                        <textarea class="formCard__input" placeholder="Commentaire(s)"></textarea>
+
+                        <button class="formCard__button" type="submit">Soumettre</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="prix" class="container">
+            <div class="w-[90%] md:w-[80%] m-auto">
+                <h2 class="mt-10 mb-8 leading-none italic">Tarifs $</h2>
+
+                <table class="w-full border-collapse my-4 bg-white overflow-hidden">
+                    <thead class="bg-[#FF23C1] text-[#f7fbfb]">
+                        <tr>
+                            <th class="px-3 md:px-4 py-2 md:py-3 text-left font-bold text-sm md:text-base">Type de
+                                tatouage</th>
+                            <th class="px-3 md:px-4 py-2 md:py-3 text-left font-bold text-sm md:text-base">Tarif horaire
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-[#f7fbfb] border-b border-[#e0e0e0]">
+                            <td class="text--background px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">Custom</td>
+                            <td class="text--background px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">150&nbsp;$
+                                CAD&nbsp;/ heure</td>
+                        </tr>
+                        <tr class="hover:bg-[#f7fbfb] border-b border-[#e0e0e0]">
+                            <td class="text--background px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">Flash</td>
+                            <td class="text--background px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">120&nbsp;$
+                                CAD&nbsp;/ heure</td>
+                        </tr>
+                        <tr class="bg-[#fff5fc] font-bold border-0">
+                            <td class="text--pink px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">Acompte requis</td>
+                            <td class="text--pink px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">50&nbsp;$ CAD (non
+                                remboursable)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="faq" class="container">
+            <div class="w-[90%] md:w-[80%] m-auto">
+                <div>
                     <h2 class="italic">FAQ&nbsp;#</h2>
 
-                    <h3 class="faqSection">Pour réserver un <em>flash</em></h3>
+                    <h3 class="faq__sectionTitle">Pour réserver un <em>flash</em></h3>
 
                     <div class="text-base" id="accordion-flush" data-accordion="collapse"
-                        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-                        data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        data-active-classes="faq__sectionHeader" data-inactive-classes="faq__sectionHeader--inactive">
 
                         <h3 id="accordion-flush-heading-1">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-1" aria-expanded="false"
                                 aria-controls="accordion-flush-body-1">
                                 <span>Comment je réserve un tatouage flash ?</span>
@@ -93,8 +218,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: C’est super simple ! Il te
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: C’est super simple ! Il te
                                     suffit
                                     de nous contacter (par message, mail ou directement au shop) pour choisir ton flash
                                     préféré. On te donne les dispos et on bloque ton créneau ensemble.</p>
@@ -104,7 +229,7 @@
 
                         <h3 id="accordion-flush-heading-2">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
                                 aria-controls="accordion-flush-body-2">
                                 <span>Est-ce que je peux modifier un flash ?</span>
@@ -117,8 +242,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: En général, les flashs sont
+                            <div class="py-5 border-b border-gray-200 ">
+                                <p class="mb-2  ">R&nbsp;: En général, les flashs sont
                                     des créations uniques, pensées pour être tatouées telles quelles. Mais si tu veux
                                     une petite adaptation (taille, couleur, emplacement…), on peut toujours en discuter
                                     !</p>
@@ -128,7 +253,7 @@
 
                         <h3 id="accordion-flush-heading-3">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
                                 aria-controls="accordion-flush-body-3">
                                 <span>Faut-il verser un acompte pour réserver ?</span>
@@ -141,8 +266,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Oui, un petit acompte est
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: Oui, un petit acompte est
                                     demandé pour bloquer ton créneau. Il est déduit du prix total du tatouage le jour J.
                                     Ça permet d’être sûr que le flash t’est bien réservé !</p>
                             </div>
@@ -151,7 +276,7 @@
 
                         <h3 id="accordion-flush-heading-4">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
                                 aria-controls="accordion-flush-body-4">
                                 <span>Et si je dois annuler ou reporter ?</span>
@@ -164,8 +289,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Pas de panique, ça peut
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: Pas de panique, ça peut
                                     arriver. Préviens-nous simplement le plus tôt possible. Selon le délai, ton acompte
                                     peut être reporté sur une autre date. Le but, c’est que tout se passe dans la bonne
                                     humeur ! ✨</p>
@@ -173,15 +298,14 @@
                         </div>
                     </div>
 
-                    <h3 class="faqSection">Avant la séance</h3>
+                    <h3 class="faq__sectionTitle">Avant la séance</h3>
 
                     <div class="text-base" id="accordion-flush2" data-accordion="collapse"
-                        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-                        data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        data-active-classes="faq__sectionHeader" data-inactive-classes="faq__sectionHeader--inactive">
 
                         <h3 id="accordion-flush-heading-5">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
                                 aria-controls="accordion-flush-body-5">
                                 <span>Comment bien me préparer avant ma séance ?</span>
@@ -194,8 +318,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Rien de compliqué ! Mange
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: Rien de compliqué ! Mange
                                     bien,
                                     bois de
                                     l’eau et viens reposé. Évite simplement l’alcool et les drogues la veille, pour que
@@ -207,7 +331,7 @@
 
                         <h3 id="accordion-flush-heading-6">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
                                 aria-controls="accordion-flush-body-6">
                                 <span>Dois-je faire quelque chose de spécial pour ma peau ?</span>
@@ -220,8 +344,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Oui, un peu d’amour pour ta
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: Oui, un peu d’amour pour ta
                                     peau !
                                     Hydrate-la bien les jours précédents, évite le soleil et ne mets pas de crème le
                                     jour J.
@@ -232,7 +356,7 @@
 
                         <h3 id="accordion-flush-heading-7">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
                                 aria-controls="accordion-flush-body-7">
                                 <span>Et si je ne me sens pas très bien le jour du tatouage ?</span>
@@ -245,8 +369,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Pas de souci, ça arrive à tout
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2  ">R&nbsp;: Pas de souci, ça arrive à tout
                                     le
                                     monde. Si tu es malade ou fatigué, il vaut mieux reporter : ton corps doit être en
                                     forme
@@ -257,7 +381,7 @@
 
                         <h3 id="accordion-flush-heading-8">
                             <button type="button"
-                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right  border-b border-gray-200 gap-3"
                                 data-accordion-target="#accordion-flush-body-8" aria-expanded="false"
                                 aria-controls="accordion-flush-body-8">
                                 <span>Est-ce que je peux venir accompagné(e) ?</span>
@@ -270,8 +394,8 @@
                         </h3>
 
                         <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 text-gray-500 dark:text-gray-400">R&nbsp;: Bien sûr, si ça te rassure !
+                            <div class="py-5 border-b border-gray-200">
+                                <p class="mb-2 ">R&nbsp;: Bien sûr, si ça te rassure !
                                     Mais
                                     garde en tête que certaines zones de tatouage sont réservées au calme, pour que le
                                     tatoueur reste concentré et que tu passes un bon moment.</p>
@@ -333,6 +457,7 @@
         </div>
     </footer>
 
+    <script src="scripts/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
 </body>

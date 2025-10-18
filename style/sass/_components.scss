@@ -3,10 +3,88 @@
 
 /** COMPONENTS **/
 
-.btn{
-    @include btn($color-gold, $color-text, $color-gold);
+.btn {
+  @include btn($color-gold, $color-text, $color-gold);
 
-    &--secondary{
-        @include btn($color-pink, $color-text, $color-pink);
+  &--secondary {
+    @include btn($color-pink, $color-text, $color-pink);
+  }
+}
+
+.formCard {
+  @include card(100%);
+
+  &__label {
+    color: $color-pink;
+    font-size: 1rem;
+  }
+
+  &__input {
+    @include input(10px, 5px);
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  &__inputRow {
+    display: flex;
+    gap: 10px;
+
+    &--f1 {
+      flex: 1;
+
+      > .errorMessage {
+        color: #e80426;
+        font-size: 0.75rem;
+        height: 13px;
+        display: block;
+        margin-top: 3px;
+      }
     }
+  }
+
+  &__button {
+    @include btn($color-pink, $color-text, $color-pink, $txtSize: 1.6rem);
+    width: 100%;
+    margin: 0;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 0 20px;
+  }
+
+  &__radioGroup {
+    margin-top: 3%;
+    padding: 0 10px 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    background-color: #ffffff;
+
+    .errorMessage {
+      color: #e80426;
+      font-size: 0.75rem;
+      height: 13px;
+      display: block;
+    }
+  }
+
+  &__radioOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #000000;
+    cursor: pointer;
+
+    input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #ff23c1;
+    }
+
+    input[type="radio"]:focus {
+      outline: 3px solid black;
+      outline-offset: 2px;
+    }
+  }
 }
